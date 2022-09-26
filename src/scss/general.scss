@@ -12,6 +12,11 @@ html {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #1F2937;
+  height: 100vh;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
