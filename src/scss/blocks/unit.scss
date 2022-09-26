@@ -1,0 +1,55 @@
+@use "../variables.scss" as v;
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #6943FF;
+}
+
+.unit__heading {
+  margin-top: 3.3rem;
+  margin-bottom: 3rem;
+
+  color: v.$primary-color;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.03em;
+}
+
+.unit__input {
+  width: 11.7rem;
+  height: 8.3rem;
+
+  border: 2px solid #B295FF;
+  border-radius: 5px;
+
+  background-color: transparent;
+
+  color: v.$primary-color;
+  font-weight: 800;
+  font-size: 5.8rem;
+  line-height: 2.4rem;
+}
+
+.unit__btn-wrapper {
+  margin-top: 2.7rem;
+  margin-bottom: 3.4rem;
+}
+
+.unit__btn {
+  width: 11.7rem;
+  height: 4.2rem;
+
+  background-color: v.$primary-color;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: none;
+
+  color: #3D3D3D;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
