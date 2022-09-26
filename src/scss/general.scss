@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
