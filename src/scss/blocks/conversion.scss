@@ -6,9 +6,13 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 
-  &--light {
-    background-color: #F4F4F4;
-  }
+  // .light {
+  //   background-color: #F4F4F4;
+  // }
+}
+
+.light {
+  background-color: #F4F4F4;
 }
 
 .conversion__wrapper {
@@ -27,7 +31,7 @@
     margin-bottom: 0;
   }
 
-  &--light {
+  .light {
     background-color: v.$primary-color;
   }
 }
@@ -41,7 +45,7 @@
   line-height: 2rem;
   text-align: center;
 
-  &--light{
+  .light{
     color: #5A537B;
   }
 }
@@ -53,7 +57,7 @@
   line-height: 2rem;
   text-align: center;
   
-  &--light{
+  .light{
     color: #353535;
   }
 }

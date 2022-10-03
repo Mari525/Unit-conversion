@@ -6,6 +6,22 @@ let length = document.getElementById("length");
 let volume = document.getElementById("volume");
 let mass = document.getElementById("mass");
 
+let themeBtn = document.getElementById("theme-btn");
+
+themeBtn.addEventListener("click", function() {
+  // let theme = document.querySelectorAll(conversion);
+  // let u = document.querySelector(".conversion");
+  // u.classList.add('conversion--light');
+  // console.log(document.querySelector(".conversion"));
+  if (document.querySelector(".conversion").classList.contains("light")) {
+    document.querySelector(".conversion").classList.remove("light");
+  }
+  else {
+    // document.querySelector(".conversion").querySelectorAll('*').classList.add("light");
+    document.querySelector(".conversion").classList.add("light");
+  }
+})
+
 convertBtn.addEventListener("click", function() {
   let value = convertInput.value;
   if (!isNaN(value)) {

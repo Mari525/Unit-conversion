@@ -41,7 +41,7 @@
   margin-bottom: 3.4rem;
 }
 
-.unit__btn {
+.unit__btn, .unit__theme-btn {
   width: 11.7rem;
   height: 4.2rem;
 
@@ -54,6 +54,11 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+
+.unit__theme-btn {
+  width: 20rem;
+  margin-top: 2rem;
 }
 
 .unit__warning {
