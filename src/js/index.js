@@ -1,6 +1,7 @@
 const convertInput = document.getElementById("convert-input");
 const convertBtn = document.getElementById("convert-btn");
 const warning = document.getElementById("warning");
+const clearBtn = document.getElementById("clear-btn");
 
 let length = document.getElementById("length");
 let volume = document.getElementById("volume");
@@ -25,4 +26,11 @@ convertBtn.addEventListener("click", function() {
     volume.textContent = "";
     mass.textContent = "";
   }
+})
+
+clearBtn.addEventListener("click", function() {
+  convertInput.value = "";
+  length.textContent = "";
+  volume.textContent = "";
+  mass.textContent = "";
 })
