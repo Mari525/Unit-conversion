@@ -1,13 +1,18 @@
-let convertInput = document.getElementById("convert-input");
-let convertBtn = document.getElementById("convert-btn");
-let warning = document.getElementById("warning");
+const convertInput = document.getElementById("convert-input");
+const convertBtn = document.getElementById("convert-btn");
+const warning = document.getElementById("warning");
 
 let length = document.getElementById("length");
 let volume = document.getElementById("volume");
 let mass = document.getElementById("mass");
 
+if (localStorage.getItem("number")) {
+  convertInput.value = localStorage.getItem("number");
+}
+
 convertBtn.addEventListener("click", function() {
   let value = convertInput.value;
+  localStorage.setItem("number", value);
   if (!isNaN(value)) {
     warning.textContent = "";
     length.textContent = `${value} meters = ${(value * 3.281).toFixed(3)} feet | ${value} feet = ${(value * 0.305).toFixed(3)} meters`;
